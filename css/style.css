@@ -1,0 +1,55 @@
+*:not(html) {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  scroll-behavior: smooth;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+  text-size-adjust: 100%;
+}
+body {
+  background-color: #d4e0ee;
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+}
+img {
+  display: block;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: inherit;
+}
+.container {
+  --radius: 1.25rem;
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  width: min(100%, 320px);
+  margin: 0 16px;
+  padding: 16px;
+}
+.flex .container .qr-code {
+  border-radius: calc(var(--radius) / 2);
+  max-width: 100%;
+}
+.flex .container .texts {
+  text-align: center;
+  padding: 26px 19px;
+}
+.flex .container .texts h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+.flex .container .texts p {
+  color: hsl(220, 15%, 55%);
+}
